@@ -1,3 +1,6 @@
 [user]
 	email = jamie@jsmth.co.uk
 	name = Jamie Smith
+    signingkey = 681FCA39
+[commit]
+	gpgsign = true
