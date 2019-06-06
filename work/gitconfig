@@ -1,0 +1,16 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Jamie Smith
+	email = jamie.smith@cloudreach.com
+    signingkey = 681FCA39
+
+[includeIf "gitdir:~/personal/"]
+    path = ~/personal/.gitconfig
+
+[commit]
+    gpgsign = true
+
+[credential] 
+helper = !aws codecommit credential-helper $@ 
+UseHttpPath = true
